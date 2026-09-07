@@ -16,6 +16,14 @@ public class StudentManager {
         }
     }
 
+    public void showStudentByID(int id) {
+        for (Student student : students) {
+            if (student.getId() == id) {
+                System.out.println(student);
+            }
+        }
+    }
+
     public Student findStudent(int id) {
         for (Student student : students) {
             if (student.getId() == id) {
